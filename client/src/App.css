@@ -1,0 +1,293 @@
+:root {
+    --secondary: #393D3F;
+    --primary: #F40076;
+    --background: #258EA6;
+    --card: #FFFFFF;
+    --secondarylight: #9A8C98;
+
+  }
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+.main-body {
+    width: 80%;
+    margin: 2em auto;
+
+    padding: 1em 2em;
+    border-radius: 10px;
+
+
+    box-shadow: black 0 0 10px 0.5px;
+
+    background-color: var(--card);
+    /* background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+}
+
+button {
+    font-size: large;
+    outline: none;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 0.4rem 2rem;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: stretch;
+}
+
+.file {
+    width: 100%;
+    margin: 1em 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    
+
+    border: 3px var(--primary) dashed;
+}
+
+.file:hover {
+    background-color: hsla(0, 0%, 0%, 0.158);
+    
+}
+
+.file img { 
+    width: 100%;
+    max-width: 10rem;
+    height: auto;
+}
+
+.file div {
+    text-align: center;
+}
+
+.textfield {
+    color: var(--secondary);
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.7em 0.7em;
+    -webkit-appearance: none;
+    border: 2px var(--secondary) solid;
+}
+
+.texttitle {
+    font-size: large;
+    font-weight: 700;
+    overflow: scroll;
+}
+
+.textfield-grp {
+    
+    margin: 1em 0;
+    width: 100%;
+}
+
+.textfield + .textfield {
+    margin-top: 0.5em;
+}
+
+textarea {
+    height: 15rem;
+    resize: vertical;
+}
+
+.input-file {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+
+}
+
+.link-logos {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.yt-logo {
+    width: 100%;
+    max-width: 5rem;
+    height: auto;
+    box-shadow: black 0 0 10px 2px;
+}
+
+
+.btn {
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 0.5em auto;
+    padding: 0.4rem 2rem;
+    
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: 2px var(--primary) solid;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    border: 2px var(--secondary) solid;
+}
+
+.btn-secondary:hover {
+    background: none;
+    color: var(--secondary);
+}
+
+.btn-primary:hover {
+    background: none;
+    color: var(--primary);
+}
+
+nav {
+    /* width: 100%; */
+    background-color: rgba(0, 255, 255, 0.4);
+    font-size: x-large;
+}
+
+
+.nav-title {
+    display: block;
+    text-align: center;
+}
+
+h2 {
+    color: var(--background);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 0 0;
+}
+
+.succ-title {
+    color: var(--primary);
+    font-size: 3rem;
+}
+
+.succ-desc {
+    margin-top: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: var(--secondary);
+}
+
+.success-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 500px;
+}
+
+.success--video:hover {
+    /* box-shadow:rgb(7, 55, 99) 0 0 8px 4px;
+    transition: box-shadow 100ms ease-out; */
+    transform: scale(1.01);
+    transition: transform 300ms ease-out;
+}
+
+.success--video {
+    flex-grow: 1;
+    flex: 2 1 0vw;
+    max-width: 70vw;
+    /* box-shadow:black 0 0 10px 1px; */
+    transition: transform 500ms ease-out;
+    
+}
+
+.success--title {
+    padding: 0.5vw 1rem;
+}
+
+
+.logo {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 900px) {
+
+
+    .home h2 {
+        text-align: center;
+    }
+
+    .success-container {
+        flex-direction: column;
+        min-height: 0;
+    }
+
+
+    .success--title {
+        padding: 0.5vw 0;
+    }
+
+    .succ-title {
+        font-size: 5vw;
+        padding: 0.2vw 0;
+    }
+
+    .succ-desc {
+        font-size: 1.5vw;
+        margin: 0;
+    }
+
+    .btn-link {
+        width: 100%;
+    }
+
+    .btn-success {
+        font-size: 1.5vw;
+        padding: 0.4vw 2vw;
+        text-align: center;
+        width: 25%;
+        margin-top: 0.5rem;
+    }
+
+    .success--video {
+        width: 100%;
+        /* min-height: 200px; */
+        flex: 2 1 40vw;
+        max-width: 100%;
+    }
+    
+  }  
+
+@media screen and (max-width: 480px) {
+
+   
+
+    .main-body {
+        width: 100%;
+        margin: 2em 0;
+    
+        padding: 1em 0.5em;
+        border-radius: 0;
+    
+        background-color: blue;
+    }
+  }
+
+  
